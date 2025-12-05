@@ -16,87 +16,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buraco Negro Supermassivo</title>
     <style>
+        :root{ --base-font: Arial, sans-serif; }
         body {
-            font-family: Arial, sans-serif;
+            font-family: var(--base-font);
             color: white;
+            margin:0;
+            padding:0;
+            background-image: url('https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg');
+            background-size: cover;
+            background-position:center;
         }
 
-        footer {
-            line-height: 0.4;
-            padding: 20px;
-            font-size: small;
-        }
+        header{ padding:12px 16px; display:flex; align-items:center; gap:16px; }
+        header img.logo{ max-width:200px; height:auto; display:block; }
+
+        main{ max-width:1000px; margin:0 auto; padding:18px; }
+
+        h1,h2{ text-align:center; margin:8px 0; }
+        p, h3, footer { text-align:left; }
+
+        h1 { font-size: clamp(28px,6vw,48px); }
+        h2 { font-size: clamp(20px,4vw,36px); }
+        h3 { font-size: clamp(16px,3.2vw,22px); margin-top:12px; }
+
+        p { font-size: clamp(14px,3.5vw,18px); line-height:1.5; margin:8px 0; }
+
+        img { max-width:100%; height:auto; display:block; margin:12px 0; }
+
+        footer{ line-height:1.1; padding:12px 0; color:#fff; }
     </style>
 </head>
 
-<body background="https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg">
-    <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo" width="200">
-    <ul type="square" style="color: red;">
-        <li><a href="index.html"
-                style="color: red;">Início</a></li>
-    </ul>
-    <center>
+<body>
+    <header>
+        <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo" width="200">
+        <nav>
+            <ul style="margin:0; padding:0; list-style:square; color:red;">
+                <li><a href="index.html" style="color:red; text-decoration:none;">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <h1>Buraco Negro Supermassivo</h1>
         <h2>O que são?</h2>
-    </center>
-    <p>Um <b>buraco negro supermassivo</b> é uma classe de buracos negros encontrados
-        principalmente no centro das galáxias. Ao contrário dos buracos negros estelares, que são originados a partir da
-        evolução de estrelas de massa elevada, os buracos negros supermassivos foram formados por imensas nuvens de gás
-        ou por aglomerados de milhões de estrelas que colapsaram sobre a sua própria gravidade quando o universo ainda
-        era bem mais jovem e denso. Os buracos negros supermassivos possuem uma massa milhões ou até bilhões de vezes
-        maior que a massa do Sol. A maioria dos buracos negros supermassivos já catalogados estão em forte atividade, ou
-        seja, continuam atraindo matéria para si, aumentando ainda mais a sua massa.</p>
-    <p>Acredita-se que buracos negros supermassivos existam nos centros de quase todas as
-        galáxias. O buraco negro no centro da <b>Via Láctea</b>, denominado <a
-            href="Sagittarius%20A.html"
-            style="color: red;">Sagittarius
-            A*</a>, tem uma massa de aproximadamente quatro milhões de vezes a massa solar, determinada diretamente a
-        partir da observação de órbitas estelares.</p>
-    <p>Dois buracos negros supermassivos foram fotografados diretamente pelo Telescópio Event
-        Horizon: o buraco negro na gigante galáxia elíptica Messier 87 e o buraco negro no centro da Via Láctea
-        (Sagittarius A*).</p>
-    <center>
+
+        <p>Um <b>buraco negro supermassivo</b> é uma classe de buracos negros encontrados
+            principalmente no centro das galáxias. Ao contrário dos buracos negros estelares, que são originados a partir da
+            evolução de estrelas de massa elevada, os buracos negros supermassivos foram formados por imensas nuvens de gás
+            ou por aglomerados de milhões de estrelas que colapsaram sobre a sua própria gravidade quando o universo ainda
+            era bem mais jovem e denso. Os buracos negros supermassivos possuem uma massa milhões ou até bilhões de vezes
+            maior que a massa do Sol. A maioria dos buracos negros supermassivos já catalogados estão em forte atividade, ou
+            seja, continuam atraindo matéria para si, aumentando ainda mais a sua massa.</p>
+        <p>Acredita-se que buracos negros supermassivos existam nos centros de quase todas as
+            galáxias. O buraco negro no centro da <b>Via Láctea</b>, denominado <a
+                href="Sagittarius%20A.html" style="color:red; text-decoration:underline;">Sagittarius
+                A*</a>, tem uma massa de aproximadamente quatro milhões de vezes a massa solar, determinada diretamente a
+            partir da observação de órbitas estelares.</p>
+        <p>Dois buracos negros supermassivos foram fotografados diretamente pelo Telescópio Event
+            Horizon: o buraco negro na gigante galáxia elíptica Messier 87 e o buraco negro no centro da Via Láctea
+            (Sagittarius A*).</p>
+
         <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sagittarius_Astar_in_polarised_light.tif/lossy-page1-1200px-Sagittarius_Astar_in_polarised_light.tif.jpg"
-                alt="Sagittarius-A*" width="600" height="400">
+                alt="Sagittarius-A*" style="max-width:100%; height:auto;">
             <figcaption>Imagem real tirada do buraco negro supermassivo Sagittarius A* encontrado
                 no centro da Via Láctea</figcaption>
         </figure>
-    </center>
-    <center>
-        <h2>Como se formam?</h2>
-    </center>
-    <h3>●Formação:</h3>
-    <p>Acredita-se que se formaram a partir do colapso de grandes nuvens de gás e poeira e de
-        aglomerados de estrelas que colapsaram sob sua própria gravidade no início do universo. </p>
-    <h3>●Outras teorias:</h3>
-    <p>Outra teoria sugere a fusão de buracos negros e galáxias no início do universo, e a
-        descoberta de um buraco negro distante sugere que alguns podem ter nascido massivos sem a fase de fusão. </p>
-    <center>
-        <h2>Como são observados</h2>
-    </center>
-    <h3>●Atividade e acreção:</h3>
-    <p>A maioria dos buracos negros supermassivos está ativa, atraindo matéria (gás e estrelas)
-        que forma um disco de acreção ao seu redor. </p>
-    <h3>●Emissão de luz:</h3>
-    <p>A matéria no disco de acreção aquece a níveis extremos e emite radiação, como raios-X, que
-        é captada por telescópios, permitindo observar sua presença. </p>
-    <h3>●Imagens diretas:</h3>
-    <p>Em 2019, o Event Horizon Telescope conseguiu a primeira imagem direta de um buraco negro
-        supermassivo, o do centro da galáxia M87.</p>
-    <h2>Impacto nas galáxias</h2>
-    <h3>●Evolução galáctica:</h3>
-    <p>Buracos negros supermassivos controlam a vida das galáxias, influenciando a formação ou
-        interrupção de estrelas e o crescimento da própria galáxia.</p>
-    <h3>●Fenómenos ativos:</h3>
-    <p>A acreção de matéria em buracos negros supermassivos pode alimentar núcleos galácticos
-        ativos (AGNs) e quasares, que emitem grandes quantidades de energia.</p>
-    <footer>
-        <p> Desenvolvido pela aluna Estela Cristina de Almeida Alves </p>
-        <p>RA:5162158</p>
-    </footer>
+
+        <h2 style="text-align:center;">Como se formam?</h2>
+
+        <h3>●Formação:</h3>
+        <p>Acredita-se que se formaram a partir do colapso de grandes nuvens de gás e poeira e de
+            aglomerados de estrelas que colapsaram sob sua própria gravidade no início do universo. </p>
+        <h3>●Outras teorias:</h3>
+        <p>Outra teoria sugere a fusão de buracos negros e galáxias no início do universo, e a
+            descoberta de um buraco negro distante sugere que alguns podem ter nascido massivos sem a fase de fusão. </p>
+
+        <h2 style="text-align:center;">Como são observados</h2>
+
+        <h3>●Atividade e acreção:</h3>
+        <p>A maioria dos buracos negros supermassivos está ativa, atraindo matéria (gás e estrelas)
+            que forma um disco de acreção ao seu redor. </p>
+        <h3>●Emissão de luz:</h3>
+        <p>A matéria no disco de acreção aquece a níveis extremos e emite radiação, como raios-X, que
+            é captada por telescópios, permitindo observar sua presença. </p>
+        <h3>●Imagens diretas:</h3>
+        <p>Em 2019, o Event Horizon Telescope conseguiu a primeira imagem direta de um buraco negro
+            supermassivo, o do centro da galáxia M87.</p>
+
+        <h2>Impacto nas galáxias</h2>
+
+        <h3>●Evolução galáctica:</h3>
+        <p>Buracos negros supermassivos controlam a vida das galáxias, influenciando a formação ou
+            interrupção de estrelas e o crescimento da própria galáxia.</p>
+        <h3>●Fenômenos ativos:</h3>
+        <p>A acreção de matéria em buracos negros supermassivos pode alimentar núcleos galácticos
+            ativos (AGNs) e quasares, que emitem grandes quantidades de energia.</p>
+
+        <footer>
+            <p> Desenvolvido pela aluna Estela Cristina de Almeida Alves </p>
+            <p>RA:5162158</p>
+        </footer>
+    </main>
 </body>
+
+</html>
 
 
 </html>
+
 
