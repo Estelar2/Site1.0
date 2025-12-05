@@ -1,96 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5GV43RSWS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5GV43RSWS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-B5GV43RSWS');
+    </script>
 
-  gtag('config', 'G-B5GV43RSWS');
-</script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             color: white;
+            background-image: url("https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        ul {
+            list-style: square;
+            color: red;
+            padding-left: 20px;
+        }
+
+        ul li a {
+            color: red;
+            font-size: 18px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.6);
+            max-width: 420px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 5px;
+        }
+
+
+        .radio-group {
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;          
+    margin-bottom: 8px;
+    color: white;
+}
+
+
+        .radio-item label {
+            margin-left: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
         }
 
         footer {
-            line-height: 0.4;
+            text-align: center;
             padding: 20px;
             font-size: small;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 150px;
+            }
+
+            form {
+                width: 90%;
+            }
+
+            ul li a {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 
-<body background="https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg">
+<body>
+
     <header>
-
-        <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo"
-            width="200">
-        <ul type="square" style="color: red;">
-            <li><a href="index.html"
-                    style="color: red;">Início</a></li>
+        <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo">
+        <ul>
+            <li><a href="index.html">Início</a></li>
         </ul>
+    </header>
 
-        <!DOCTYPE html>
-        <html lang="pt-BR">
+    <h2>Formulário</h2>
 
-        <head>
-            <meta charset="UTF-8">
-            <title>Cadastro</title>
-        </head>
+    <form action="#" method="post">
 
-        <body>
-            <center>
-                <h2>Formulário</h2>
-            </center>
+        Nome completo:<br>
+        <input type="text" id="nome" name="nome" required><br><br>
 
-            <form action="#" method="post">
-                Nome completo: <br>
-                <input type="text" id="nome" name="nome" required><br><br>
+        E-mail:<br>
+        <input type="email" id="email" name="email" required><br><br>
 
-                E-mail:<br>
-                <input type="email" id="email" name="email" required><br><br>
+        Idade:<br>
+        <input type="text" id="idade" name="idade"><br><br>
 
-                Idade<br>
-                <input type="text" id="idade" name="idade"> <br><br>
+        Buraco negro mais fascinante:<br>
+        <select id="buraco" name="buraco">
+            <option value="ton618">TON 618</option>
+            <option value="sagitarioA">Sagittarius A*</option>
+            <option value="phoenixa">Phoenix A</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
 
-                Buraco negro mais fascinante:<br>
-                <select id="buraco" name="buraco">
-                    <option value="ton618">TON 618</option>
-                    <option value="sagitarioA">Sagittarius A*</option>
-                    <option value="phoenixa">Phoenix A</option>
-                    <option value="outro">Outro</option>
-                </select><br><br>
+        Nível de interesse:<br>
 
-                Nível de interesse: <br>
+        <div class="radio-group">
+            <div class="radio-item">
                 <input type="radio" id="interesse1" name="interesse" value="interesse1">
-                <label for="interesse1">Sem interesse</label><br>
+                <label for="interesse1">Sem interesse</label>
+            </div>
 
+            <div class="radio-item">
                 <input type="radio" id="interesse2" name="interesse" value="interesse2">
-                <label for="interesse2">Pouco interesse</label><br>
+                <label for="interesse2">Pouco interesse</label>
+            </div>
 
+            <div class="radio-item">
                 <input type="radio" id="interesse3" name="interesse" value="interesse3">
-                <label for="interesse3">Muito interesse</label><br><br>
+                <label for="interesse3">Muito interesse</label>
+            </div>
+        </div>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </body>
+        <br>
 
-        </html>
-        <footer>
-            <p style="color:white ;"> Desenvolvido pela aluna Estela Cristina de Almeida Alves </p>
-            <p style="color: white;">RA:5162158</p>
-        </footer>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <footer>
+        <p>Desenvolvido pela aluna Estela Cristina de Almeida Alves</p>
+        <p>RA:5162158</p>
+    </footer>
+
 </body>
+
+</html>
+
 
 
 </html>
+
 
