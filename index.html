@@ -1,52 +1,115 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5GV43RSWS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-B5GV43RSWS');
 </script>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buracos Negros</title>
-  <style>
-    :root{ --base-font: Arial, sans-serif; }
-    body {
-      font-family: var(--base-font);
-      color: white;
-      margin:0;
-      padding:0;
-      background-image: url('https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg');
-      background-size: cover;
-      background-position:center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header{ padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:16px;}
-    header img.logo{ max-width:200px; height:auto; display:block; }
+    <title>Buracos Negros</title>
 
-    main{ max-width:1100px; margin:0 auto; padding:18px; }
+    <style>
 
-    h1,h2{ text-align:center; }
-    p, ul, li { text-align:left; font-size:clamp(14px,3.2vw,18px); line-height:1.5; }
+        :root{ --base-font: Arial, sans-serif; }
 
-    .img-responsiva { max-width:100%; height:auto; display:block; margin:12px 0; }
+        body {
+            font-family: var(--base-font);
+            color: white;
+            margin:0;
+            padding:0;
+            background-image: url('https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg');
+            background-size: cover;
+            background-position:center;
+        }
 
-    nav ul{ margin:0; padding:0; display:flex; gap:12px; list-style:none; }
-    nav a{ color:red; text-decoration:none; }
+        header{
+            padding:12px 16px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:16px;
+        }
 
-    footer{ margin-top:12px; }
-  </style>
+        header img.logo{
+            max-width:200px;
+            height:auto;
+            display:block;
+        }
+
+        nav ul{
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-wrap:wrap;
+            gap:12px;
+            list-style:none;
+        }
+
+        nav a{
+            color:red;
+            text-decoration:none;
+            font-size: clamp(14px, 3.2vw, 18px);
+        }
+
+        main{
+            max-width:1100px;
+            margin:0 auto;
+            padding:18px;
+        }
+
+        h1,h2{ text-align:center; }
+
+        p, ul, li {
+            text-align:left;
+            font-size:clamp(14px,3.2vw,18px);
+            line-height:1.5;
+        }
+
+        .img-responsiva { 
+            max-width:100%; 
+            height:auto; 
+            display:block; 
+            margin:12px 0; 
+            border-radius:6px;
+        }
+
+        footer{
+            margin-top:12px;
+            text-align:left;
+            line-height:1.2;
+        }
+
+        /* Ajustes adicionais de responsividade */
+        @media (max-width: 600px){
+
+            header img.logo{
+                max-width:150px;
+            }
+
+            nav ul{
+                justify-content:center;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
+
   <header>
     <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo" width="200">
+
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
@@ -60,40 +123,50 @@
   </header>
 
   <main>
+
     <section id="inicio">
+
       <h1 style="color: white;">Buraco Negro</h1>
-      <h2 style="color: white;"> O que são?</h2>
+      <h2 style="color: white;">O que são?</h2>
 
       <p style="color: white;">Buracos negros estão entre os objetos cósmicos mais misteriosos,
         muito estudados, mas não totalmente compreendidos. Esses objetos não são realmente buracos. São enormes
         concentrações de matéria compactadas em espaços minúsculos. Um buraco negro é tão denso que a gravidade logo abaixo
         de sua superfície, o horizonte de eventos, é forte o suficiente para que nada – nem mesmo a luz – possa escapar.
       </p>
+
       <p style="color: white;">O horizonte de eventos não é uma superfície como a da Terra ou mesmo a do Sol. É uma
         fronteira que contém toda a matéria que compõe o buraco negro.</p>
+
       <p style="color: white;">Há muito que não sabemos sobre buracos negros, como a aparência da matéria dentro de seus
         horizontes de eventos. No entanto, há muito que os cientistas sabem sobre buracos negros.</p>
 
       <img src="https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/02/buraco-negro_1740285230669.jpg"
       alt="buraco-negro" class="img-responsiva" >
+
     </section>
 
     <section id="tipos">
+
       <h2 style="color: white; text-align:center;">Quantos tipos de buracos negros existem? </h2>
 
       <p style="color: white;">De acordo com as informações mais recentes da Nasa, atualizadas em maio de 2024, os
         cientistas dividem esses objetos em três categorias segundo sua massa: <a
         href="buraco_negro_estelar.html" style="color: red;">buraco
         negro de massa estelar</a>, <a href="buraco_negro_supermassivo.html" style="color: red;">supermassivos</a> e de <a href="buraco_negro_intermedi%C3%A1rio.html" style="color: red;">massa intermediária</a></p>
+
       <p style="color: white;">Entretanto, estudiosos também suspeitam de um quarto tipo: buracos negros primordiais
         formados durante o nascimento do Universo.</p>
+
       <p style="color: white;">Embora ainda não esteja claro como esses gigantes cósmicos se formam, os astrônomos
         acreditam que os buracos negros supermassivos são encontrados no centro das galáxias, incluindo a Via Láctea, onde
         está a Terra.</p>
+
       <p style="color: white;">A agência espacial explica que <a
         href="Sagittarius%20A.html" style="color: red;">Sagittarius A*</a>, o buraco negro que está no centro da nossa
         galáxia, tem 4 milhões de vezes a massa do Sol, o que o torna um objeto relativamente pequeno em comparação com os
         encontrados em outras galáxias.</p>
+
     </section>
 
     <h2 style="color:white; text-align:center;">Buracos Negros Próximos da Terra</h2>
@@ -105,6 +178,7 @@
           <li>V616 Monocerotis(V616 Mon ou A0620-00)(Cerca de 3.000 anos-luz na constelação de Monoceros [Unicórnio])</li>
         </ul>
       </li>
+
       <li style="color: white;">Candidatos
         <ul style="color:white;">
           <li style="color: white;">Gaia BH2 (~3.800 anos-luz)</li>
@@ -112,6 +186,7 @@
           <li style="color: white;">Outros em estudo pelo projeto Gaia</li>
         </ul>
       </li>
+
       <li style="color: white;">Características em comum
         <ul style="color:white;">
           <li>Detectados por efeitos gravitacionais</li>
@@ -119,14 +194,16 @@
           <li>Não emitem luz própria</li>
         </ul>
       </li>
+
     </ul>
 
     <footer>
-      <p style="color:white ;"> Desenvolvido pela aluna Estela Cristina de Almeida Alves </p>
-      <p style="color: white;">RA:5162158</p>
+      <p style="color:white;">Desenvolvido pela aluna Estela Cristina de Almeida Alves</p>
+      <p style="color:white;">RA:5162158</p>
     </footer>
+
   </main>
+
 </body>
 
 </html>
-
