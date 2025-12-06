@@ -25,7 +25,6 @@
             background-attachment: fixed;
         }
 
-        /* Imagem responsiva */
         .img-responsiva {
             max-width: 100%;
             height: auto;
@@ -33,9 +32,14 @@
             margin: 0 auto;
         }
 
-        /* Texto alinhado à esquerda */
-        p, h1, h2, h3, figcaption {
+        p, figcaption {
             text-align: left;
+            margin-left: 10px;
+            margin-right: 10px;
+                }
+        
+        h1, h2, h3 {
+            text-align: center;
             margin-left: 10px;
             margin-right: 10px;
         }
@@ -64,10 +68,10 @@
             text-align: left;
         }
 
-        /* AJUSTES PARA TELAS GRANDES (PC) */
         @media (min-width: 768px) {
             h1 { font-size: 40px; }
             h2 { font-size: 28px; }
+            h3 { font-size: 24px; }
             p { font-size: 20px; }
             figcaption { font-size: 15px; }
         }
