@@ -4,121 +4,69 @@
 <head>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5GV43RSWS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-B5GV43RSWS');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5GV43RSWS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B5GV43RSWS');
+</script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buraco Negro Massa intermediária</title>
 
     <style>
-        :root {
-            --base-font: Arial, sans-serif;
-        }
+        :root{ --base-font: Arial, sans-serif; }
 
         body {
             font-family: var(--base-font);
             color: white;
-            margin: 0;
-            padding: 0;
+            margin:0;
+            padding:0;
             background-image: url('https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg');
             background-size: cover;
-            background-position: center;
+            background-position:center;
         }
 
-        header {
-            padding: 12px 16px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
+        header{ padding:12px 16px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+        header img.logo{ max-width:200px; height:auto; display:block; }
 
-        header img.logo {
-            max-width: 200px;
-            height: auto;
-            display: block;
-        }
+        main{ max-width:1000px; margin:0 auto; padding:18px; }
 
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: square;
-            color: red;
-        }
+        h1,h2{ text-align:center; margin:8px 0; }
+        p, h3, footer { text-align:left; }
 
-        nav ul li a {
-            color: red;
-            text-decoration: none;
-            font-size: 18px;
-        }
+        h1 { font-size: clamp(28px,6vw,48px); }
+        h2 { font-size: clamp(20px,4vw,36px); }
+        h3 { font-size: clamp(16px,3.2vw,22px); margin-top:12px; }
 
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 18px;
-        }
+        p { font-size: clamp(14px,3.5vw,18px); line-height:1.5; margin:8px 0; }
 
-        h1, h2 {
-            text-align: center;
-            margin: 8px 0;
-        }
-
-        p, h3, footer {
-            text-align: left;
-        }
-
-        h1 {
-            font-size: clamp(28px, 6vw, 48px);
-        }
-
-        h2 {
-            font-size: clamp(20px, 4vw, 36px);
-        }
-
-        h3 {
-            font-size: clamp(16px, 3.2vw, 22px);
-            margin-top: 12px;
-        }
-
-        p {
-            font-size: clamp(14px, 3.5vw, 18px);
-            line-height: 1.5;
-            margin: 8px 0;
-        }
-
-        img {
+        /* Imagem no celular */
+        figure img {
+            width: 100%;
             max-width: 100%;
             height: auto;
             display: block;
             margin: 12px auto;
         }
 
-        figure img {
-            max-width: 100%;
-        }
+        footer{ line-height:1.1; padding:12px 0; color:#fff; }
 
-        figure {
-            text-align: center;
-        }
-
-        footer {
-            line-height: 1.1;
-            padding: 12px 0;
-            color: #fff;
-        }
-
-        /* Melhora a imagem no desktop */
-        @media (min-width: 900px) {
+        /* Imagem maior no PC */
+        @media (min-width: 900px){
             figure img {
-                max-width: 80%;
+                width: 80%;          /* AUMENTA A IMAGEM NO PC */
+                max-width: 1100px;   /* Limite máximo */
+                margin: 20px auto;
+            }
+            
+            figure {
+                text-align: center;
             }
         }
+
     </style>
 </head>
 
@@ -127,8 +75,8 @@
 <header>
     <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png" alt="logo uniube" class="logo" width="200">
     <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
+        <ul style="margin:0; padding:0; list-style:square; color:red;">
+            <li><a href="index.html" style="color:red; text-decoration:none;">Início</a></li>
         </ul>
     </nav>
 </header>
@@ -196,5 +144,8 @@
 
 </body>
 </html>
+
+</html>
+
 
 
