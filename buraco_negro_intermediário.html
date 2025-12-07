@@ -44,22 +44,23 @@
         p { font-size: clamp(14px,3.5vw,18px); line-height:1.5; margin:8px 0; }
 
         /* Imagem no celular */
-        figure img {
+        img {
             width: 100%;
             max-width: 100%;
             height: auto;
-            display: block;
-            margin: 12px auto;
+            display:block;
+            margin:12px 0;
         }
 
         footer{ line-height:1.1; padding:12px 0; color:#fff; }
 
-        /* Imagem maior no PC */
+        /* IMAGEM MAIOR NO PC */
         @media (min-width: 900px){
             figure img {
-                width: 80%;          /* AUMENTA A IMAGEM NO PC */
-                max-width: 1100px;   /* Limite máximo */
-                margin: 20px auto;
+                width: 90%;            /* AUMENTA A IMAGEM NO PC */
+                max-width: 1200px;     /* Tamanho máximo */
+                margin-left: auto;
+                margin-right: auto;
             }
             
             figure {
@@ -144,8 +145,5 @@
 
 </body>
 </html>
-
-</html>
-
 
 
