@@ -23,13 +23,44 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            position: relative;
         }
 
-        /* CONTAINER CENTRAL */
+        /* CAMADA ESCURA PARA IMITAR A OUTRA PÁGINA */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.70); /* opacidade ajustada */
+            z-index: -1;
+        }
+
+        /* CONTAINER CENTRAL REAL */
         .container {
-            max-width: 950px;
+            width: 90%;
+            max-width: 900px;
             margin: auto;
-            padding: 20px;
+            padding: 20px 20px 40px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 10px;
+            backdrop-filter: blur(2px);
+        }
+
+        /* HEADER */
+        header {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+
+        header img {
+            display: block;
+            margin: auto;
+        }
+
+        header ul {
+            padding-left: 20px;
         }
 
         .img-responsiva {
@@ -37,13 +68,13 @@
             height: auto;
             display: block;
             margin: 20px auto;
+            border-radius: 8px;
         }
 
         h1, h2, h3 {
             text-align: center;
         }
 
-        /* TAMANHOS RESPONSIVOS */
         h1 {
             font-size: 38px;
             margin-top: 20px;
@@ -51,6 +82,7 @@
 
         h2 {
             font-size: 26px;
+            margin-bottom: 20px;
         }
 
         p, figcaption {
@@ -67,7 +99,7 @@
 
         footer {
             margin-top: 40px;
-            padding: 20px;
+            padding: 20px 10px;
             text-align: left;
             font-size: 14px;
         }
@@ -78,13 +110,14 @@
             h2 { font-size: 6vw; }
             p { font-size: 4.5vw; }
             figcaption { font-size: 4vw; }
+            .container { padding: 15px; }
         }
     </style>
 </head>
 
 <body background="https://i.pinimg.com/originals/1c/4a/d1/1c4ad1200d6722a660073cb519c4b43c.jpg">
 
-    <header class="container">
+    <header>
         <img src="https://uniube.br/img/landing/tecnico/logoUniubeBranca.png"
              alt="logo uniube" class="logo" width="200">
 
@@ -138,4 +171,5 @@
 </html>
 
 </html>
+
 
